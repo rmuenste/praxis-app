@@ -6,6 +6,14 @@ Author: Extremum
 Author URL: http://webkab.ru
 */
 /* basics */
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+@font-face {
+  font-family: Montserrat;
+  src: url(assets/montserrat/Montserrat-Regular.otf) format("opentype");
+}
+
 
 html {height:100%; width:100%;}
 body {
@@ -229,15 +237,16 @@ a.no-decor {
 	display: inline-flex;
 	margin: -32px 0 0 -32px;
 }
+
+/* Header styling */
 .header {
 	padding-top:22px;
 	height: 120px;
 	box-sizing: border-box;
-	color:#fff;
+  color:#fff;
 }
-.footer {
-	color: #fff;
-}
+
+/* Navigation bar styling */
 .nav-main {
 	margin-left: auto;
 }
@@ -255,8 +264,7 @@ a.no-decor {
 	text-decoration: none;
 }
 .nav-main .menu a:hover {
-	font-weight: 600;
-	margin-right:-2px;
+  text-shadow: 0 0 2px white;
 }
 
 .wp_logo-text {
@@ -531,7 +539,11 @@ a.no-decor {
 .wp_blog-list .more-link:hover{
 	opacity: 0.8;
 }
+
+/* Footer styling */
+
 .footer {
+	color: #fff;
 	padding-bottom:64px;
 	overflow: hidden;
 }
@@ -544,10 +556,23 @@ a.no-decor {
 	margin-bottom:48px;
 	display: block;
 }
+
 .wp_footer-side .map {
 	margin-top: 0px;
 	margin-left: 10px;
 }
+
+.wp_footer-side strong{
+	font-weight: 900;
+	color: #fff;
+	font-size: 18px;
+}
+
+.wp_footer-side hr {
+  color: white;
+  border: 1px solid white;
+}
+
 .footer-contacts {
 	font-weight: 500;
 	line-height: 1.4;
@@ -559,6 +584,19 @@ a.no-decor {
 	color: #fff;
 	font-size: 18px;
 }
+
+.footer-contacts ul {
+  margin-top: 5px;
+  padding-left: 0px;
+  padding-top: 0px;
+  list-style-type: none;
+}
+
+.footer-contacts hr {
+  color: white;
+  border: 1px solid white;
+}
+
 .wp_single {
 	line-height: 1.4;
 	padding:64px 24px;

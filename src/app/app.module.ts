@@ -8,6 +8,12 @@ import { MainComponent } from './main/main.component';
 import { FooterComponent } from './footer/footer.component';
 import { OurServicesComponent } from './our-services/our-services.component';
 import { OurNewsComponent } from './our-news/our-news.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MaterialModule } from './material.module';
+import { ServiceSectionComponent } from './service-section/service-section.component';
+
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -16,11 +22,15 @@ import { OurNewsComponent } from './our-news/our-news.component';
     MainComponent,
     FooterComponent,
     OurServicesComponent,
-    OurNewsComponent
+    OurNewsComponent,
+    ServiceSectionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
