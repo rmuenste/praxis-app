@@ -3,7 +3,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'app-service-section',
   templateUrl: './service-section.component.html',
-  encapsulation: ViewEncapsulation.Native,
+  encapsulation: ViewEncapsulation.ShadowDom,
   styleUrls: ['./service-section.component.css']
 })
 export class ServiceSectionComponent implements OnInit {

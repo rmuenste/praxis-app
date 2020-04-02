@@ -10,10 +10,12 @@ import { OurServicesComponent } from './our-services/our-services.component';
 import { OurNewsComponent } from './our-news/our-news.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MaterialModule } from './material.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { ServiceSectionComponent } from './service-section/service-section.component';
 
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+//191773702
+// 0221 / 466 191 00
 
 @NgModule({
   declarations: [
@@ -29,7 +31,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule,
     NgbModule
   ],
   providers: [],
