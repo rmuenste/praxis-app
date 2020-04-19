@@ -1,0 +1,48 @@
+<main class="content">
+
+  <div class="wp_top-archive section">
+    <div class="wrapper">
+      <h1 class="wp_top-title-archive bold upper">Praxis Blog</h1>
+      <h2 class="wp_top-subtitle">Unser Blog zu allgemeinen Gesundheitsthemen</h2><br />
+    </div>
+  </div>
+
+  <div id="wp_blog" class="wp_blog section">
+    <div class="wrapper">
+      <div class="wp_usual-title">Blog</div>
+    </div>
+    <div class="wp_blog-list flexbox column">
+
+      <!-- Blog items start here -->
+
+      <div class="item bg-grey flexbox content-center" *ngFor="let blogItem of filterPosts()">
+        <div class="item-side text--side flexbox">
+          <div class="item-block">
+            <div class="item-title">
+              <a href="http://praxismuenster.de/blog-3/">
+                {{blogItem.title.rendered}} </a>
+            </div>
+            <div class="item-dscr">
+                <p [innerHTML]="blogItem.excerpt.rendered"><br />
+                </p>
+                <a href="http://praxismuenster.de/blog-3/" class="more-link">Mehr erfahren</a>
+            </div>
+          </div>
+        </div>
+        <div class="item-side with--image">
+          <div class="item-img">
+            <a href="http://praxismuenster.de/blog-3/">
+              <img width="768" height="549"
+                src="http://praxismuenster.de/wp-content/uploads/2019/02/agriculture-basket-close-up-768x549.jpg"
+                class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                srcset="http://praxismuenster.de/wp-content/uploads/2019/02/agriculture-basket-close-up-768x549.jpg 768w, http://praxismuenster.de/wp-content/uploads/2019/02/agriculture-basket-close-up-512x366.jpg 512w, http://praxismuenster.de/wp-content/uploads/2019/02/agriculture-basket-close-up-300x214.jpg 300w, http://praxismuenster.de/wp-content/uploads/2019/02/agriculture-basket-close-up-1024x731.jpg 1024w"
+                sizes="(max-width: 768px) 100vw, 768px" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</main>
