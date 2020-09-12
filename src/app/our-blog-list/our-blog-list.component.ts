@@ -14,6 +14,7 @@ export class OurBlogListComponent implements OnInit {
 
   subscription: Subscription;
 
+  // Inject the http-service for blog posts into the component
   constructor(private starWarsService: StarwarsService) { }
 
   ngOnDestroy() {

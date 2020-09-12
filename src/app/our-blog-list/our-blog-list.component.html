@@ -19,24 +19,20 @@
         <div class="item-side text--side flexbox">
           <div class="item-block">
             <div class="item-title">
-              <a href="http://praxismuenster.de/blog-3/">
+              <a [href]="blogItem.link">
                 {{blogItem.title.rendered}} </a>
             </div>
             <div class="item-dscr">
                 <p [innerHTML]="blogItem.excerpt.rendered"><br />
                 </p>
-                <a href="http://praxismuenster.de/blog-3/" class="more-link">Mehr erfahren</a>
+                <a class="more-link" [routerLink]="['/blog', blogItem.id]" [state]="blogItem">Mehr erfahren</a>
             </div>
           </div>
         </div>
         <div class="item-side with--image">
           <div class="item-img">
-            <a href="http://praxismuenster.de/blog-3/">
-              <img width="768" height="549"
-                src="http://praxismuenster.de/wp-content/uploads/2019/02/agriculture-basket-close-up-768x549.jpg"
-                class="attachment-medium_large size-medium_large wp-post-image" alt=""
-                srcset="http://praxismuenster.de/wp-content/uploads/2019/02/agriculture-basket-close-up-768x549.jpg 768w, http://praxismuenster.de/wp-content/uploads/2019/02/agriculture-basket-close-up-512x366.jpg 512w, http://praxismuenster.de/wp-content/uploads/2019/02/agriculture-basket-close-up-300x214.jpg 300w, http://praxismuenster.de/wp-content/uploads/2019/02/agriculture-basket-close-up-1024x731.jpg 1024w"
-                sizes="(max-width: 768px) 100vw, 768px" />
+            <a [href]="blogItem.link">
+            <img [src]="blogItem['_embedded']['wp:featuredmedia'][0]['media_details']['sizes']['medium_large'].source_url"/>
             </a>
           </div>
         </div>
@@ -46,3 +42,38 @@
   </div>
 
 </main>
+
+<!--
+
+              <img
+                src="http://praxismuenster.de/wp-content/uploads/2019/02/agriculture-basket-close-up-768x549.jpg"
+                class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                srcset="http://praxismuenster.de/wp-content/uploads/2019/02/agriculture-basket-close-up-1024x731.jpg 1024w,
+                        http://praxismuenster.de/wp-content/uploads/2019/02/agriculture-basket-close-up-768x549.jpg 768w,
+                        http://praxismuenster.de/wp-content/uploads/2019/02/agriculture-basket-close-up-512x366.jpg 512w,
+                        http://praxismuenster.de/wp-content/uploads/2019/02/agriculture-basket-close-up-300x214.jpg 300w"
+                sizes="(min-width: 900px) 768px,
+                       (min-width: 1300px) 1024px,
+                       (min-width: 768px) 512px,
+                       (min-width: 500px) 300px,
+                       100vw
+                      " />
+
+
+
+
+              <img width="768" height="549"
+                src="http://praxismuenster.de/wp-content/uploads/2019/02/agriculture-basket-close-up-768x549.jpg"
+                class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                srcset="http://praxismuenster.de/wp-content/uploads/2019/02/agriculture-basket-close-up-1024x731.jpg 1024w,
+                        http://praxismuenster.de/wp-content/uploads/2019/02/agriculture-basket-close-up-768x549.jpg 768w,
+                        http://praxismuenster.de/wp-content/uploads/2019/02/agriculture-basket-close-up-512x366.jpg 512w,
+                        http://praxismuenster.de/wp-content/uploads/2019/02/agriculture-basket-close-up-300x214.jpg 300w"
+                sizes="(min-width: 900px) 768px,
+                       (min-width: 1300px) 1024px,
+                       (min-width: 768px) 512px,
+                       (min-width: 500px) 300px,
+                       100vw
+                      " />
+
+-->

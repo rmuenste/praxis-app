@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { OurServicesComponent } from './our-services/our-services.component';
 import { OurNewsComponent } from './our-news/our-news.component';
 import { OurBlogListComponent } from './our-blog-list/our-blog-list.component';
+import { OurBlogDetailComponent } from './our-blog-detail/our-blog-detail.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -28,7 +29,8 @@ import { ServiceSectionComponent } from './service-section/service-section.compo
     OurServicesComponent,
     OurNewsComponent,
     ServiceSectionComponent,
-    OurBlogListComponent
+    OurBlogListComponent,
+    OurBlogDetailComponent
   ],
   imports: [
     BrowserModule,
