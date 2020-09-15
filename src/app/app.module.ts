@@ -16,6 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ServiceSectionComponent } from './service-section/service-section.component';
+import { OurNewsDetailComponent } from './our-news-detail/our-news-detail.component';
+import { OurServiceDetailComponent } from './our-service-detail/our-service-detail.component';
 
 //191773702
 // 0221 / 466 191 00
@@ -30,7 +32,9 @@ import { ServiceSectionComponent } from './service-section/service-section.compo
     OurNewsComponent,
     ServiceSectionComponent,
     OurBlogListComponent,
-    OurBlogDetailComponent
+    OurBlogDetailComponent,
+    OurNewsDetailComponent,
+    OurServiceDetailComponent
   ],
   imports: [
     BrowserModule,

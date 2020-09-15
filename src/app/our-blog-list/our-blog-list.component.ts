@@ -25,11 +25,9 @@ export class OurBlogListComponent implements OnInit {
     this.subscription = this.starWarsService.getPosts().subscribe( data => {
       this.blogPosts = [];
       this.blogPosts = data;
-//      console.log("Blog page");
       for(let i = 0; i < data.length; i++) {
         if(data[i].categories.includes(3)) {
-//          this.blogPosts.push(data[i]);
-          console.log(data[i]);
+//          console.log('Blog post data: %o',  data[i]);
         }
       }
 

@@ -651,9 +651,24 @@ a.no-decor {
 
 @media (max-width:1024px) {
 	.nav-main .menu li {
-    margin-right: 20px;
     font-size: 18px;
+  	margin-right:10px;
+  	font-weight: 400;
+  }
+
+	.nav-main {
+		max-width: 100%;
+		overflow-x: auto;
+  }
+
+  .menu .menu-item  {
+	  font-size: 18px;
+  }
+
+	.wp_logo-text {
+	  font-size: 22px;
 	}
+
 	.wp_top-title {
     padding-top: 32px;
     font-size: 36px;
@@ -753,6 +768,111 @@ a.no-decor {
 		max-width: 100%;
 		overflow-x: auto;
 	}
+	.wp_usual-title {
+		display: block;
+	}
+	.wp_services-item {
+		width: 46%;
+	}
+	.wp_services-item .item-img{
+		height: 120px;
+	}
+
+	.wp_services-item .item-img img{
+		max-width: 80px;
+	}
+	.wp_blog-list .item-side {
+		width: 100%;
+	}
+	.wp_blog-list .item-side.text--side {
+		border-right: none;
+		padding-bottom:24px;
+	}
+	.wp_blog-list .item:nth-child(2n) .item-side.text--side {
+		padding: 0 24px 24px 24px;
+	}
+	.wp_blog-list .item-side img {
+		max-width: 100%;
+	}
+	.wp_blog-list .item:nth-child(2n) .item-side.with--image {
+		border-right: none;
+	}
+	.wp_single {
+		padding: 24px;
+	}
+	.wp_single-side  {
+		width: 100%;
+	}
+	.wp_single-side.image {
+		width: 100%;
+		margin: 24px 0;
+	}
+	.wp_single-content {
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+	}
+}
+
+@media (max-width:575px) {
+	body,
+	.wp_services-item .item-dscr,
+	.wp_unser-list .item-dscr,
+	.wp_unser-list .item-dscr,
+	.wp_blog-list .item-side .item-dscr,
+	.footer-contacts {
+		font-size: 14px;
+	}
+	.wp_services-item .item-title {
+		font-size: 16px;
+	}
+	iframe {
+		max-width: 100%;
+	}
+	ul {
+		padding: 0;
+	}
+	.wp_top-archive {
+	    background: url("/assets/images/blue-sky-clear-sky-cold.jpg") top center no-repeat #3fa8b7;
+		background-size: auto 100%;
+	}
+	.wp_top {
+		background: url("/assets/images/bg_top.png") top center no-repeat #3fa8b7;
+		background-size: auto 100%;
+	}
+	#wp_logo-text img {
+		max-width: initial;
+	}
+	.wp_top-title {
+		font-size: 20px;
+	}
+	.wp_top-subtitle {
+		font-size: 18px;
+	}
+	.header .wrapper,
+	.wp_news-list,
+	.wp_unser-list,
+	.wp_blog-list .item,
+	.wp_footer {
+		flex-wrap: wrap;
+	}
+	.wp_logo-text {
+	  font-size: 22px;
+  }
+	.nav-main {
+		max-width: 100%;
+		overflow-x: auto;
+	  margin-left: auto;
+  }
+
+	.nav-main .menu li {
+    font-size: 12px;
+  	margin-right:8px;
+  }
+
+	.wp_logo-text {
+	  font-size: 22px;
+	}
+
 	.wp_usual-title {
 		display: block;
 	}
