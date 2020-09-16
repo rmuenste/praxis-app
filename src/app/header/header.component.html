@@ -33,5 +33,46 @@
           </ul>
         </div>
 		</nav>
-	</div>
+  </div>
+  <div class="wrapper3">
+  <mat-toolbar color=primary class="center">
+    <div class="item1">
+    <button mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+    </div>
+  <div class="wrapper4">
+    <div class="top-logo-container item2" id="header-image">
+      <a class="flexbox center no-decor" href="#" title="bla" rel="home">
+        <div class="top-logo-img">
+          <!--
+    				<img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo" width="" height="" />
+    				-->
+        </div>
+        <div class="wp_logo-text">
+          <div>Frauenarztpraxis</div>
+          <div class="upper bold">Münster</div>
+        </div>
+      </a>
+    </div>
+      <div class="mat-menu item3">
+          <ul class="mat-menu-ul" >
+            <li>
+              <a routerLink="/">Home</a>
+            </li>
+            <li>
+              <a href="#wp_services" aria-current="page">Leistungsspektrum</a>
+            </li>
+            <li>
+                <a href="#wp_news" aria-current="page"><span matBadge="4" matBadgePosition="after" matBadgeColor="warn">News</span></a>
+            </li>
+            <li>
+              <a routerLink="/blog">Blog</a>
+            </li>
+            <li><a href="#wp_footer">Kontakt</a></li>
+          </ul>
+      </div>
+      </div>
+  </mat-toolbar>
+  </div>
 </header>

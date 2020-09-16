@@ -6,9 +6,9 @@ Author: Extremum
 Author URL: http://webkab.ru
 */
 /* basics */
-/*
+
 @import "@angular/material/prebuilt-themes/indigo-pink.css";
-*/
+
 
 @font-face {
   font-family: Montserrat;
@@ -107,6 +107,22 @@ a.no-decor {
 	padding: 0 24px;
 	box-sizing: border-box;
 }
+
+.wrapper2 {
+ position: absolute;
+ z-index: 100;
+ width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+ box-sizing: border-box;
+}
+
+.mat-toolbar.mat-primary {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  background-color: #3fa8b7;
+  color: #fff;
+}
+
 .bg-grey {
 	background:#ededec;
 }
@@ -675,7 +691,8 @@ a.no-decor {
     line-height: 1.2;
     margin-bottom: 24px;
 		text-align: center;
-	}
+  }
+
 	.wp_top-subtitle {
     font-size: 24px;
     font-weight: 600;

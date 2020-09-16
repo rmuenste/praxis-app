@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MaterialModule } from './material.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ServiceSectionComponent } from './service-section/service-section.component';
 import { OurNewsDetailComponent } from './our-news-detail/our-news-detail.component';
 import { OurServiceDetailComponent } from './our-service-detail/our-service-detail.component';
+
 
 //191773702
 // 0221 / 466 191 00
@@ -41,7 +43,8 @@ import { OurServiceDetailComponent } from './our-service-detail/our-service-deta
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
