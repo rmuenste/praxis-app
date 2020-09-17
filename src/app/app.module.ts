@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './material.module';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +14,7 @@ import { OurBlogListComponent } from './our-blog-list/our-blog-list.component';
 import { OurBlogDetailComponent } from './our-blog-detail/our-blog-detail.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -44,7 +46,9 @@ import { OurServiceDetailComponent } from './our-service-detail/our-service-deta
     BrowserAnimationsModule,
     NgbModule,
     HttpClientModule,
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

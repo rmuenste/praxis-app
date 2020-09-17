@@ -21,6 +21,8 @@ export class AppComponent {
 
   myArray = [1, 2, 3];
 
+  sideNavOpen: boolean = false;
+
   constructor(private starWarsService: StarwarsService) { }
 
   ngOnDestroy() {
@@ -40,6 +42,11 @@ export class AppComponent {
       }
     });
 
+  }
+
+  parentHamburgerClickHandler(value) {
+    this.sideNavOpen = !this.sideNavOpen;
+    console.log("Hamburge parent handler");
   }
 
   // a function with a generic parameter T that takes an array of type T as

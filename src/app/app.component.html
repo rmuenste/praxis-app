@@ -1,6 +1,24 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav role="navigation">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/" (click)="sidenav.close()">Home</a>
+      <a mat-list-item href="#wp_services" aria-current="page" (click)="sidenav.close()">Leistungsspektrum</a>
+      <a mat-list-item href="#wp_news" aria-current="page" (click)="sidenav.close()">
+        News
+<!--
+        <span matBadge="4" matBadgePosition="after" matBadgeColor="warn">News</span>
+-->
+      </a>
+      <a mat-list-item routerLink="/blog" (click)="sidenav.close()">Blog</a>
+      <a mat-list-item href="#wp_footer" (click)="sidenav.close()">Kontakt</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-header (buttonClicked)="sidenav.toggle()"></app-header>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
 
 <!--
 <app-main></app-main>
