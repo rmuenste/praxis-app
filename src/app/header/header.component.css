@@ -65,15 +65,12 @@
 
 
 .item1 {
-  border: 2px solid black;
 }
 
 .item2 {
-  border: 2px solid black;
 }
 
 .item3 {
-  border: 2px solid black;
   flex-wrap: wrap;
 }
 
